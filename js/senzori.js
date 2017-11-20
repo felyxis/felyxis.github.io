@@ -1,4 +1,5 @@
 //document.getElementById("id_x").innerHTML = "Salut";hghghgg
+
 window.addEventListener("deviceorientation",on_device_orientation);
 window.addEventListener("devicemotion",on_device_motion);
 function on_device_orientation(e)

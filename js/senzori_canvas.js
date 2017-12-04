@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.04.06";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.04.07";
 
 //window.addEventListener("deviceorientation", on_device_orientation);
 window.addEventListener("devicemotion", on_device_motion);
@@ -7,7 +7,7 @@ var canvas = document.getElementById("id_canvas");
 var ctx = canvas.getContext("2d");
 
 
-var unghiuri=(gamma:0, beta:0);
+var unghiuri={gamma:0, beta:0};
 
 setInterval(deseneaza_cerc, 40, unghiuri);
 

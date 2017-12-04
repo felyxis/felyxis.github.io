@@ -15,6 +15,7 @@ function on_start_touch(e)
 	for (var i=0; i< touches.length; i++) {
 		context.beginPath();
 		context.arc(touches.item(i).pageX, touches.item(i).pageY,20, 0, 2*Math.PI);
+		context.strokeStyle=["#FF0000", "#00FF00", "#0000FF", "#FFF000", "#FFFFFF"]
 		context.stroke();
 		
 		

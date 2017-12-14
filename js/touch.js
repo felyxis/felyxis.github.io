@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.6";
+document.getElementById("id_business_version").innerHTML = "Business version = 2017.12.14.7";
 
 
 var canvas = document.getElementById("id_canvas");
@@ -38,4 +38,4 @@ for(var i=0; i<atingere.length; i++)
 }
 	
 }
-//---------------------------------------
+//---------------------------------

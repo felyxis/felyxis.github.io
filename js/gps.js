@@ -15,7 +15,7 @@ function on_position_success(e)
 			"&zoom=18" +
 			"&size=400x300" +
 			"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"
-			"markers=color:blue|label:Apor|" + e.coords.latitude + "," + e.coords.longitude
+			"markers=color:blue|label:APOR|" + e.coords.latitude + "," + e.coords.longitude
 			;
 			
 	 document.getElementById("id_img").src=map_str;

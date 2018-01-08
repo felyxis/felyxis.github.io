@@ -14,7 +14,7 @@ function on_position_success(e)
 			e.coords.latitude + "," + e.coords.longitude +
 			"&zoom=15" +
 			"&size=400x300" +
-			"key=AIzaSyBSUQG8KDeE-NcLMXe8dlfQzhv1eh-CDu0";
+			"&key=AIzaSyBSUQG8KDeE-NcLMXe8dlfQzhv1eh-CDu0";
 	 document.getElementById("id_img").src=map_str;
 }
 //-------------------------------

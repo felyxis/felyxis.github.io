@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.9";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.10";
 
 navigator.geolocation.getCurrentPosition(on_position_success,on_position_failure);
 
@@ -14,7 +14,7 @@ function on_position_success(e)
 			"center="+ e.coords.latitude + "," + e.coords.longitude +
 			"&zoom=18" +
 			"&size=400x300" +
-			"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"
+			"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"+
 			"&markers=color:blue|label:A|" + e.coords.latitude + "," + e.coords.longitude
 			;
 			

@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.10";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.11";
 
 navigator.geolocation.getCurrentPosition(on_position_success,on_position_failure);
 
@@ -12,10 +12,11 @@ function on_position_success(e)
 	 
 	 var map_str="https://maps.googleapis.com/maps/api/staticmap?"+
 			"center="+ e.coords.latitude + "," + e.coords.longitude +
-			"&zoom=18" +
+			"&zoom=16" +
 			"&size=400x300" +
 			"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"+
-			"&markers=color:blue|label:A|" + e.coords.latitude + "," + e.coords.longitude
+			"&markers=color:blue|label:A|" + e.coords.latitude + "," + e.coords.longitude +
+			"&path=color:red|" + e.coords.latitude + "," + e.coords.longitude + "|Sala Unirii"
 			;
 			
 	 document.getElementById("id_img").src=map_str;

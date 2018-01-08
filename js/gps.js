@@ -1,4 +1,4 @@
-document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.2";
+document.getElementById("id_business_version").innerHTML = "Business version = 2018.01.08.3";
 
 navigator.geolocation.getCurrentPosition(on_position_success,on_position_failure);
 
@@ -14,7 +14,7 @@ function on_position_success(e)
 			"center="+ e.coords.latitude + "," + e.coords.longitude +
 			"&zoom=15" +
 			"&size=400x300" +
-			"&key=AIzaSyBSUQG8KDeE-NcLMXe8dlfQzhv1eh-CDu0";
+			"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM";
 	 document.getElementById("id_img").src=map_str;
 }
 //-------------------------------

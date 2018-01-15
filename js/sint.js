@@ -21,7 +21,7 @@ function on_get_voices()
 function speak()
 {
 	var enunt = new SpeechSynthesisUtterance();
-	enunt.lang = "ru-RU"
+	enunt.lang = "en-US"
 	enunt.text = document.getElementById("id_text").value;
 	synt.speak(enunt);
 }

@@ -3,6 +3,8 @@ document.getElementById("id_business_version").innerHTML = "Business version = "
  d.getFullYear()+"." + (d.getMonth()+ 1) + "." +d.getDate()+ ".0" ;
  
  document.addEventListener("touchstart", speak);
+ 
+ 
  var synt= window.speechSynthesis;
  //-------------------
 function on_get_voices()
@@ -22,5 +24,11 @@ function on_get_voices()
 //-------------
 function speak()
 {
+	var enunt= new SpeechSynthesisUterance();
+	enunt.lang="en-US";
+	enunt.text= document.getElementById("id_text").value;
+	
+	synt.speak(enunt);
+	
 }
 //-------------------

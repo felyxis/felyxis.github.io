@@ -11,7 +11,7 @@ var lon ;
 function speak()
 {
 	var enunt = new SpeechSynthesisUtterance();
-	enunt.lang = "ru-RU"
+	enunt.lang = "en-US"
 	enunt.text = document.getElementById("id_text").value;
 	enunt.onend = on_end_synth;
 	document.getElementById("id_speak_button").disabled=true;

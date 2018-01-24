@@ -38,7 +38,7 @@ function on_position_success(e)
 
 	  var map_str="https://maps.googleapis.com/maps/api/staticmap?center="+
 	  e.coords.latitude + "," + e.coords.longitude + "&zoom=15"+"&size=600x500"+
-		"&key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"+
+		"&key=AIzaSyCN-okwBNTQY_M0PZ-fEHnsQCHMsLIfY7U"+
 			"&markers=color:red|label:F|"+
 				e.coords.latitude  + "," + e.coords.longitude;
 	document.getElementById("id_img").src=map_str;
@@ -50,7 +50,7 @@ function line(e)
 {
 		var map_str="https://maps.googleapis.com/maps/api/staticmap?center="+
 	  lat + "," + lon + "&zoom=30"+"&size=600x500"+
-		"key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"+
+		"key=AIzaSyCN-okwBNTQY_M0PZ-fEHnsQCHMsLIfY7U"+
 			"&markers=color:red|label:F|"+ lat  + "," + lon + 
 	  "&path=color:red|" + lat + "," + lon + "|" + document.getElementById("id_enunt").innerHTML;
 	document.getElementById("id_img").src=map_str;

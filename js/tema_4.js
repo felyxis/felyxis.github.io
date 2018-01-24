@@ -49,7 +49,7 @@ function on_position_success(e)
 function line(e)
 {
 		var map_str="https://maps.googleapis.com/maps/api/staticmap?center="+
-	  lat + "," + lon + "&zoom=20"+"&size=600x500"+
+	  lat + "," + lon + "&zoom=30"+"&size=600x500"+
 		"key=AIzaSyBflsfrBYWXqLzpqKW1HGF7npiwqfVrCEM"+
 			"&markers=color:red|label:F|"+ lat  + "," + lon + 
 	  "&path=color:red|" + lat + "," + lon + "|" + document.getElementById("id_enunt").innerHTML;

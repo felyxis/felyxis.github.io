@@ -3,29 +3,16 @@ document.getElementById("id_business_version").innerHTML = "Business version = "
 + (d.getMonth()+1) + "." + d.getDate() + ".3"; 
 navigator.geolocation.getCurrentPosition(on_position_success,on_position_failure);
 
-var enunt = new SpeechSynthesisUtterance();
+	//document.getElementById("id_enunt").innerHTML = "Alba Iulia";
 var lat ;
 var lon ; 
- enunt.onresult = on_enunt_results;
- enunt.onend = on_enunt_end;
- enunt.lang="en-US";
- //------------
-
- function speak()
-{
-	if(enunt.start())
-	{}
-}
-//---------
-function on_enunt_end()
-{
-		enunt.stop();
-	
-}
+ 
+ 
 //------------------
-function on_enunt_results(e)
+function apasa()
 {
-	document.getElementById("id_enunt").innerHTML=e.results[0][0].transcript;
+	document.getElementById("id_enunt").innerHTML =  document.getElementById("id_text").value;
+	//navigator.geolocation.getCurrentPosition(line,on_position_failure);
 	line(); // functia care traseaza linia
 }
 
@@ -49,10 +36,12 @@ function on_position_success(e)
 function line(e)
 {
 		var map_str="https://maps.googleapis.com/maps/api/staticmap?center="+
-	  lat + "," + lon + "&zoom=30"+"&size=600x500"+
-		"key=AIzaSyCN-okwBNTQY_M0PZ-fEHnsQCHMsLIfY7U"+
-			"&markers=color:red|label:F|"+ lat  + "," + lon + 
-	  "&path=color:red|" + lat + "," + lon + "|" + document.getElementById("id_enunt").innerHTML;
+	  lat + "," + lon + "&zoom=8"+"&size=600x500"+
+"&key=AIzaSyDvoY0i_x0wXeE7vAOztYvmCzDIfEtzAR0"+
+"&markers=color:blue|label:Z|"+
+	  lat  + "," + lon + 
+	  "&path=color:red|" + lat + "," + lon + "|" + document.getElementById("id_enunt").innerHTML
+	  ;
 	document.getElementById("id_img").src=map_str;
 	document.getElementById("id_exp").innerHTML = "Trasarea liniei pozitia curenta si cea prezenta";
 		
@@ -62,7 +51,7 @@ function line(e)
 function on_position_failure(e)
 {
 	
-	alert("I'm lost!");
+	alert("M-am pierdut!");
 	
 }
 //------------

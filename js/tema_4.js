@@ -1,6 +1,6 @@
 var d = new Date();
 document.getElementById("id_business_version").innerHTML = "Business version = " + d.getFullYear() + "." 
-+ (d.getMonth()+1) + "." + d.getDate() + ".3"; 
++ (d.getMonth()+1) + "." + d.getDate() + ".4"; 
 navigator.geolocation.getCurrentPosition(on_position_success,on_position_failure);
 
 	//document.getElementById("id_enunt").innerHTML = "Alba Iulia";
@@ -37,7 +37,7 @@ function line(e)
 {
 		var map_str="https://maps.googleapis.com/maps/api/staticmap?center="+
 	  lat + "," + lon + "&zoom=8"+"&size=600x500"+
-"&key=AIzaSyDvoY0i_x0wXeE7vAOztYvmCzDIfEtzAR0"+
+"&key=AIzaSyCN-okwBNTQY_M0PZ-fEHnsQCHMsLIfY7U"+
 "&markers=color:blue|label:Z|"+
 	  lat  + "," + lon + 
 	  "&path=color:red|" + lat + "," + lon + "|" + document.getElementById("id_enunt").innerHTML
